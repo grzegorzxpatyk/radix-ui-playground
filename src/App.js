@@ -15,7 +15,8 @@ const globalStyles = globalCss({
 
 const H1 = styled("h1", {
   fontSize: "2rem",
-  marginBottom: "1rem"
+  marginBottom: "1rem",
+  color: 'White'
 });
 
 const StyledLabel = styled(LabelPrimitive.Root, {
