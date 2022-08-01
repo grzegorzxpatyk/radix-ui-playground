@@ -11,6 +11,10 @@ const Button = styled("button", {
   "&:active": {
     transform: "translate(0, 2px) scale(0.95)"
   },
+  "&:focus": {
+    outline: "3px solid #aaaaffaa",
+    boxShadow: "0 0 15px #aaaaffaa"
+  },
 
   variants: {
     variant: {
