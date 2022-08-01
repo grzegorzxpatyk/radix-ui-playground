@@ -15,7 +15,8 @@ const globalStyles = globalCss({
 
 const H1 = styled("h1", {
   fontSize: "2rem",
-  marginBottom: "1rem"
+  marginBottom: "1rem",
+  color: 'White'
 });
 
 const StyledLabel = styled(LabelPrimitive.Root, {
@@ -49,7 +50,7 @@ const Input = styled("input", {
 export default function App() {
   globalStyles();
 
-  const [inputValue, setInputValue] = useState("Pedro Duarte");
+  const [inputValue, setInputValue] = useState("John Smith");
   const inputRef = useRef(null);
 
   return (
@@ -67,7 +68,6 @@ export default function App() {
       <H1>Hello{inputValue && ` ${inputValue}`}!</H1>
       <Flex
         css={{
-          // height: "100%",
           padding: "0 20px",
           flexWrap: "wrap",
           alignItems: "center",
@@ -83,7 +83,6 @@ export default function App() {
         <Input
           type="text"
           id="firstName"
-          defaultValue="Pedro Duarte"
           ref={inputRef}
         />
       </Flex>
