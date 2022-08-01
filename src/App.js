@@ -16,7 +16,7 @@ const globalStyles = globalCss({
 const H1 = styled("h1", {
   fontSize: "2rem",
   marginBottom: "1rem",
-  color: 'White'
+  color: "White"
 });
 
 const StyledLabel = styled(LabelPrimitive.Root, {
@@ -80,13 +80,15 @@ export default function App() {
         >
           First name
         </Label>
-        <Input
-          type="text"
-          id="firstName"
-          ref={inputRef}
-        />
+        <Input type="text" id="firstName" ref={inputRef} />
       </Flex>
-      <Flex css={{ margin: "2rem auto" }}>
+      <Flex
+        css={{
+          width: "45%",
+          margin: "2rem auto",
+          justifyContent: "space-between"
+        }}
+      >
         <Button
           onClick={() => {
             setInputValue(inputRef.current.value);

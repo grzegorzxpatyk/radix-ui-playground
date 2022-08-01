@@ -2,10 +2,9 @@ import { styled } from "@stitches/react";
 
 const Button = styled("button", {
   all: "unset",
-  padding: ".8rem 1.2rem",
+  padding: ".6rem 1rem",
   margin: ".4rem",
-  borderRadius: "1.6rem",
-  fontFamily: '"JetBrains Mono", monospace',
+  borderRadius: ".6rem",
   cursor: "pointer",
   transition: "transform .08s ease-in-out",
   "&:active": {
